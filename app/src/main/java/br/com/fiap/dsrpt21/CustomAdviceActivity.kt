@@ -34,7 +34,7 @@ class CustomAdviceActivity : AppCompatActivity() {
         buttonGoToList = findViewById(R.id.buttonGoToList)
 
         buttonAddAdvice.setOnClickListener {
-            Toast.makeText(applicationContext, "Added Advice", Toast.LENGTH_SHORT).show()
+            Toast.makeText(applicationContext, "Advice add successfully", Toast.LENGTH_SHORT).show()
         }
 
         buttonGoToAdvice.setOnClickListener {
