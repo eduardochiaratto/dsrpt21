@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">dsrpt21</string>
+    <string name="choose">Choose one advice</string>
+    <string name="success">Successfully uploaded!</string>
+    <string name="success_chappie">Chappie learned a new advice!</string>
+    <string name="back">back</string>
+    <string name="goto_custom_advice">Custom Advices</string>
+    <string name="goto_list_advice">History</string>
+    <string name="goto_advice_api">Random Advices</string>
+    <string name="add_advice">Add advice</string>
+    <string name="exit">exit</string>
+    <string name="warning">Warning!</string>
+    <string name="to_connect">Choose one of the options to connect</string>
+    <string name="connected">Connected!</string>
+</resources>

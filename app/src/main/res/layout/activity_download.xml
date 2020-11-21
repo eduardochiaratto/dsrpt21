@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".DownloadActivity"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/green">
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/share_tech_mono"
+        android:text="@string/success"
+        android:textSize="36sp"
+        android:textColor="@color/white"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/share_tech"
+        android:text="@string/success_chappie"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:textAlignment="center"/>
+
+    <Button
+        android:id="@+id/buttonBack"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:layout_marginTop="40dp"
+        android:text="@string/back"
+        android:fontFamily="@font/share_tech"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        android:background="@drawable/rounded_corners"
+        android:backgroundTint="@color/red"/>
+
+</LinearLayout>

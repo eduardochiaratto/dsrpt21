@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdviceActivity">
+
+    <TextView
+        android:id="@+id/textViewBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_baseline_arrow_back_ios_24"
+        android:layout_margin="16dp"
+        android:padding="10dp"
+        android:src="@drawable/ic_baseline_arrow_back_ios_24"
+        android:text="@string/back"
+        android:textAllCaps="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:fontFamily="@font/share_tech"
+            android:text="@string/choose"
+            android:textColor="@color/gray"
+            android:textSize="16sp" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp">
+
+            <TextView
+                android:id="@+id/textViewAdvice"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/share_tech_mono"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Lorem Ipsum" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewAdvice"
+                app:layout_constraintEnd_toEndOf="@+id/textViewAdvice"
+                app:layout_constraintStart_toStartOf="@+id/textViewAdvice"
+                app:layout_constraintTop_toTopOf="@+id/textViewAdvice"
+                tools:visibility="visible" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/buttonDislike"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_marginRight="55dp"
+                android:background="@drawable/rounded_corners"
+                android:backgroundTint="@color/red"
+                android:src="@drawable/ic_excluir" />
+
+            <ImageButton
+                android:id="@+id/buttonLike"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_marginLeft="55dp"
+                android:background="@drawable/rounded_corners"
+                android:backgroundTint="@color/green"
+                android:src="@drawable/ic_verifica"
+                android:text="Like" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/orange"
+        android:orientation="horizontal"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/buttonGoToList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40dp"
+            android:src="@drawable/ic_baseline_history_32" />
+        <ImageView
+            android:id="@+id/buttonGoToAdvice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40dp"
+            android:src="@drawable/ic_baseline_home_32" />
+        <ImageView
+            android:id="@+id/buttonGoToCustom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40dp"
+            android:src="@drawable/ic_baseline_add_box_32" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
